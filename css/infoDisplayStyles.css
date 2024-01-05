@@ -1,0 +1,22 @@
+#infoDisplay {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#infoDisplay h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#infoDisplay p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#infoDisplay p {
+    margin: 5px 0;
+    color: rgb(204, 204, 204);
+}
+

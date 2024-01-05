@@ -1,0 +1,70 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#main-map-container {
+    position: relative;
+    max-width: 450px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#map-container {
+    background-color: #A0D9D9;
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 500px;
+    font-size: large;
+}
+
+
+#map-controls{
+    position: absolute; /* Absolute positioning within main-map-container */
+    top: 10px; /* Position from the bottom */
+    right: 10px; /* Position from the right */
+}
+
+#zoom-in, #zoom-out {
+    background-color: #45858C;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* #info-container{
+    background-color: transparent;
+} */
+
+
+.svgmapregion {
+    fill: rgb(247, 247, 247);
+    stroke: #a7a7a7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 5.6544;
+}
+
+.svgmapregion:hover {
+    cursor: pointer;
+    fill: #d9c589;
+    transition: ease-in 0.1s;
+}
+
+.highlighted-region {
+    fill: #BF9765; /* or any other color you prefer */
+}
+
+#info-container {
+    min-height: 5em;
+    padding-left:20px;
+}
+
+
+
+

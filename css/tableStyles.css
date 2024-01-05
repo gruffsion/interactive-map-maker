@@ -1,0 +1,35 @@
+table {
+    border: 1px solid black;
+    font-size: 0.8em;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+
+#regionsTable {
+    border-collapse: collapse;
+}
+
+#regionsTable th, #regionsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styles for the delete button */
+.delete-button {
+    float: right; /* Position at the top right */
+    padding: 2px 5px; /* Smaller padding for a smaller button */
+    margin-left: 5px; /* Spacing from the header text */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 0.8em; /* Smaller font size for the button */
+}
+
+/* Optional: Add hover effect for the button */
+.delete-button:hover {
+    background-color: #f44336; /* Red color on hover */
+    color: white;
+}

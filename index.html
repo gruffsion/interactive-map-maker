@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Maker</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/mapStyles.css"> 
+    <link rel="stylesheet" href="css/tableStyles.css"> 
+    <link rel="stylesheet" href="css/infoDisplayStyles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Interactive Map Maker</h1>
+        <nav>
+            <ul id="header-list">
+                <li><button id="openUserGuide" style="cursor:pointer;">User guide</button></li>
+                  <li> <button id="export-map-button">Export Interactive HTML Map</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="userGuideModal" class="modal">
+        <div id="modal-content">
+            <span class="close"></span>
+            <div id="userGuideContent"><!-- Content will be inserted here --></div>
+        </div>
+    </div>
+
+    <div id="map-building-components">
+        <div id="map-selection-container">
+            <label for="map-selection">Select map:</label>
+            <select id="map-selection">
+            <option value="uk-nations">UK: National</option>
+            <option value="uk-regions">UK: Constituencies</option>
+            <option value="wales-constituencies">Wales: Constituencies</option>
+            <option value="europe">Europe</option>
+            <option value="us-states">USA: States</option>
+            </select>
+        </div>
+    <div id="export-container-parent">
+        <div id="main-map-container">
+            <!-- Map Container -->
+            <div id="map-container">
+                <!-- Dynamically load maps here -->
+            </div>
+
+            <!-- Map Controls for Zoom and Navigation (if applicable) -->
+            <div id="map-controls">
+                <!-- <div id="pan-controls">
+                    <button id="pan-up">Up</button>
+                    <button id="pan-left">Left</button>
+                    <button id="pan-right">Right</button>
+                    <button id="pan-down">Down</button>
+                </div> -->
+                <div id="zoom-controls">
+                    <button id="zoom-in">+</button>
+                    <button id="zoom-out">-</button>
+                </div>
+            </div>
+    
+
+            <!-- Information Container -->
+            <div id="info-container">
+                <div id="info-display"></div>
+                
+                <!-- Region details will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+        <!-- User Input Section -->
+        <div id="user-input-section">
+            <form id="table-container">
+                <!-- Dynamic form for user input. Rows and columns can be added based on user interaction -->
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/tableManager.js"></script>
+    <script src="js/mapNavigation.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/region.js"></script>
+    <script src="js/exportManager.js"></script>
+    
+    
+    <!-- 
+    <script src="js/mapController.js"></script>
+    <script src="js/infoDisplay.js"></script>
+    <script src="js/exporter.js"></script> -->
+</body>
+</html>
